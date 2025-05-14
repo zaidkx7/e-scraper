@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Card Styles */
+.product-card {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.product-image {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    transform: translateY(-2px);
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 1rem;
+    border: none;
+}
+
+.modal-header {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .product-image {
+        height: 150px;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td:hover {
+    background-color: #ddd;
+}
+
+td:active {
+    background-color: #ddd;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 25%;
+}
+
+input {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+a:active {
+    color: #3e8e41;
+}
+
+#add-product-link {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 45%;
+}
+
+#filter {
+    margin-left: 45%;
+}
+
+#filter-button {
+    margin-left: 10px;
+}
+
+#filter-button:hover {
+    background-color: #45a049;
+}
+
+#filter-button:active {
+    background-color: #3e8e41;
+}
+
+#filter-button:focus {
+    background-color: #3e8e41;
+}
+
+#filter-button:focus-visible {
+    background-color: #3e8e41;
+}
+
+#filter-button:focus-within {
+    background-color: #3e8e41;
+}
+
